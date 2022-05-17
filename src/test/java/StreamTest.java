@@ -56,9 +56,11 @@ public class StreamTest {
         File dir = new File("C:\\Users\\User\\IdeaProjects\\Stream");
         File file1 = new File(dir, "test.txt");
         File file2 = new File(dir, "test1.txt");
+        File file3 = new File(dir, "test2.txt");
         List<File> res = new ArrayList<>();
         res.add(file1);
         res.add(file2);
+        res.add(file3);
         List<File> fileRes = StreamClass.filesCatalog("txt", dir);
         assertEquals(res, fileRes);
     }
